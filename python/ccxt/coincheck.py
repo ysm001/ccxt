@@ -131,6 +131,7 @@ class coincheck(Exchange, ImplicitAPI):
             },
             'markets': {
                 'BTC/JPY': self.safe_market_structure({'id': 'btc_jpy', 'symbol': 'BTC/JPY', 'base': 'BTC', 'quote': 'JPY', 'baseId': 'btc', 'quoteId': 'jpy', 'type': 'spot', 'spot': True}),  # the only real pair
+                'WBTC/JPY': self.safe_market_structure({'id': 'wbtc_jpy', 'symbol': 'WBTC/JPY', 'base': 'WBTC', 'quote': 'JPY', 'baseId': 'wbtc', 'quoteId': 'jpy', 'type': 'spot', 'spot': True}),
                 # 'ETH/JPY': {'id': 'eth_jpy', 'symbol': 'ETH/JPY', 'base': 'ETH', 'quote': 'JPY', 'baseId': 'eth', 'quoteId': 'jpy'},
                 'ETC/JPY': self.safe_market_structure({'id': 'etc_jpy', 'symbol': 'ETC/JPY', 'base': 'ETC', 'quote': 'JPY', 'baseId': 'etc', 'quoteId': 'jpy', 'type': 'spot', 'spot': True}),
                 # 'DAO/JPY': {'id': 'dao_jpy', 'symbol': 'DAO/JPY', 'base': 'DAO', 'quote': 'JPY', 'baseId': 'dao', 'quoteId': 'jpy'},
